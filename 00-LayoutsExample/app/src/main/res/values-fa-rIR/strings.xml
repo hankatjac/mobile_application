@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">طراحی لایه نمایش </string>
+
+    <string name="to">به</string>
+    <string name="message">پیام</string>
+    <string name="send">ارسال</string>
+    <string name="emailHint">آدرس پست الکترونیکی</string>
+    <string name="sample_text">متن نمونه</string>
+</resources>

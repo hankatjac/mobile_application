@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Layouts</string>
+
+    <string name="to">To</string>
+    <string name="message">Message</string>
+    <string name="send">Send</string>
+    <string name="emailHint">Enter email address</string>
+    <string name="sample_text">Sample text</string>
+</resources>

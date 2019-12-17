@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FinalExam</string>
+
+    <string name="bank_logo">Starbuzz logo</string>
+
+    <!--    <string-array name="options">-->
+    <!--        <item>Tom Cat</item>-->
+    <!--        <item>Snoopy Dog</item>-->
+    <!--        <item>Jerry Mouse</item>-->
+    <!--    </string-array>-->
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ActivityShowClient">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Client Reference" />
+
+    <TextView
+        android:id="@+id/tvMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_marginTop="20dp"
+        android:text="Movie" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tvMovie"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/tvMovie"
+        android:orientation="vertical">
+
+
+        <RadioButton
+            android:id="@+id/rbAdventure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Adventure" />
+
+        <RadioButton
+            android:id="@+id/rbAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Action" />
+
+        <RadioButton
+            android:id="@+id/rbComedy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Comedy" />
+
+        <RadioButton
+            android:id="@+id/rbAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="All" />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMovie"
+        android:layout_marginTop="200dp"
+        android:text="List" />
+
+    <TextView
+        android:id="@+id/tvShow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="textview"
+        android:gravity="center"
+        android:layout_below="@+id/btList"/>
+
+
+</RelativeLayout>

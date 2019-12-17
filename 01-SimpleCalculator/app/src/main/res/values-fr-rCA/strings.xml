@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Simple Calculatrice</string>
+    <string name ="number_one">entez le premiere numero</string>
+    <string name ="number_two">entez le second numero</string>
+    <string name ="cal">Calculer</string>
+</resources>

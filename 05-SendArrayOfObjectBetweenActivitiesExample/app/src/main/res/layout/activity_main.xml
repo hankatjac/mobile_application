@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Movie Reference" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:text="Client Number" />
+
+    <EditText
+        android:id="@+id/etClientNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textView2"
+        android:layout_marginStart="200dp"
+        android:ems="7"
+        android:hint="0"
+        android:inputType="number"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tvClientEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_alignLeft="@id/textView2"
+        android:layout_marginTop="20dp"
+        android:text="Client email:" />
+
+    <EditText
+        android:id="@+id/etClientEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvClientEmail"
+        android:layout_alignLeft="@id/etClientNumber"
+        android:ems="7" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvClientEmail"
+        android:layout_alignLeft="@id/textView2"
+        android:layout_marginTop="20dp"
+        android:text="Movie" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textView4"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/textView4"
+        android:orientation="vertical">
+
+
+        <RadioButton
+            android:id="@+id/rbAdventure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="adv"
+            android:text="Adventure" />
+
+        <RadioButton
+            android:id="@+id/rbAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="action"
+            android:text="Action" />
+
+        <RadioButton
+            android:id="@+id/rbComedy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="comedy"
+            android:text="Comedy" />
+
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupMovie"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="clear" />
+
+        <Button
+            android:id="@+id/btAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/btRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:text="Remove" />
+
+        <Button
+            android:id="@+id/btUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Update" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btShowAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout1"
+        android:text="show all" />
+</RelativeLayout>

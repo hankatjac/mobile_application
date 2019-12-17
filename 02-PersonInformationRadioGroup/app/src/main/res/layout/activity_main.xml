@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/app_name" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/tvSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
+        android:layout_alignLeft="@id/tvName"
+        android:layout_marginTop="20dp"
+        android:text="Sex" />
+
+    <TextView
+        android:id="@+id/tvSport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSex"
+        android:layout_alignLeft="@id/tvName"
+        android:layout_marginTop="20dp"
+        android:text="Sport" />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tvName"
+        android:layout_marginStart="150dp"
+        android:ems="7"
+        android:inputType="text" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+ android:layout_alignBottom="@id/tvSex"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/tvSex"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Femal" />
+
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupSport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tvSport"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/tvSport"
+        android:orientation="vertical">
+
+
+        <RadioButton
+            android:id="@+id/radioSoccer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Soccer" />
+
+        <RadioButton
+            android:id="@+id/radioHockey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hockey" />
+
+        <RadioButton
+            android:id="@+id/radioHandball"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Handball" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSport"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:onClick="showMe"
+        android:text="Dispaly student information" />
+</RelativeLayout>

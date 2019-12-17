@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ca.masoudbozorgi.a2018_02_06_lifecycle.MainActivity">
+
+
+    <Button
+        android:id="@+id/gotoSecondActivityBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:layout_margin="8dp"
+
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFFFF"
+        android:textSize="30dp"
+
+        android:text="Go to second activity"
+        android:textAllCaps="false"
+
+        android:onClick="goToSecondActivity"/>
+
+    <Button
+        android:id="@+id/dialogBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:layout_margin="8dp"
+
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFFFF"
+        android:textSize="30dp"
+
+        android:text="Show Dialogue"
+        android:textAllCaps="false"
+
+        android:onClick="showAlertDialog"/>
+</LinearLayout>
